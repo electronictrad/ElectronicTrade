@@ -1,0 +1,112 @@
+/* Start Global Rules */
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --main-color:#2196f3;
+    --main-color-alt:#1787E0;
+    --main-transition:0.3s;
+    --main-padding: 100px;
+    --section-background: #ececec;
+    --color-dark: hsl(252, 30%, 17%);
+    --color-light:hsl(252, 30%,95%);
+    --color-gray: hsl(252,15%,65%);
+    --color-primary: hsl(252, 75%,60%);
+    --color-secondary: hsl(252,100%,90%);
+    --color-success:hsl(120,95%,65%);
+    --color-danger: hsl(0,95%,65%);
+    --color-white: hsl(252,30%,100%);
+    --color-black: hsl(252,30%,10%);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End Global Rules */
+/*================Nav=================*/
+nav{
+    background-color: var(--section-background);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.log{
+    color: var(--main-color);
+    font-size: 28px;
+    font-weight: bold;
+    height: 72px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0 15px;
+}
+    
+.portfile{
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+  height: 72px;
+    justify-items: center;
+    align-items: center;  
+    
+}
+.portfile button{
+    color: white;
+}
+ nav .input-search{
+    display: flex;
+    height: 72px;
+    justify-items: center;
+    align-items: center;
+}
+.input-search span {
+    font-weight: bold;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.input-search input {
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+}
+.input-search input::placeholder{
+    color: var(--main-color);
+
+}
+.create {
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+

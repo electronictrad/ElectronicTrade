@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Hide / Show Passowrd - Easy Tutorials</title>
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!--font Awesome libarary-->
+        <link rel="stylesheet" href="css/all.min.css" />
+    </head>
+    <body>
+        <div class="from-box">
+            <h1>Login Here</h1>
+            <div class="input-box">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Email Id">
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" placeholder="Passowrd" id="my Input">
+                <span class="eye" onclick="myfunction()">
+                <i id="hide1" class="fa fa-eye"></i>
+                <i id="hide2" class="fa fa-eye-slash"></i>
+            </span>
+            </div>
+            <button type="button" class="login-btu"> LOGIN</button>
+        </div>
+        <script>
+            function myfunction (){
+                var x =document.getElementById("my Input")
+                var y =document.getElementById("hide1")
+                var z =document.getElementById("hide2")
+                if (x.type=== 'password'){
+                    x.type = "text";
+                    y.style.display = "block"
+                    z.style.display = "none";
+                }else{
+                    x.type = "password";
+                    y.style.display = "none"
+                    z.style.display = "block";
+                }
+            }
+        </script>
+
+    </body>
+</html>
